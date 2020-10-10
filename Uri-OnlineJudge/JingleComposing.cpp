@@ -1,3 +1,10 @@
+/*
+* name: Jingle Composing
+* link: https://www.urionlinejudge.com.br/judge/en/problems/view/1430
+* state: Accepted
+* date: 07/10/2020
+*/
+
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -5,13 +12,19 @@
 #include <vector>
 
 using namespace std;
-
-std::vector<std::string> split(std::string strToSplit, char delimeter)
+/*
+* Splits a string using a character as delimiter  
+*
+* @param strToSplit is the string to be splitted
+* @param delimiter is the character used as delimiter
+* @returns splittedStrings vector of string 
+*/
+std::vector<std::string> split(std::string strToSplit, char delimiter)
 {
     stringstream ss(strToSplit);
     string item;
     vector<string> splittedStrings;
-    while (getline(ss, item, delimeter))
+    while (getline(ss, item, delimiter))
     {
        splittedStrings.push_back(item);
     }
@@ -20,31 +33,31 @@ std::vector<std::string> split(std::string strToSplit, char delimeter)
 
 int main(){
     vector<string> splittedString;
-    string line, var;
-    map<char, double> dict;
+    string line, measure;
+    map<char, double> notes;
     int cant;
     double sum;
-    char delimeter = '/';
-    dict['W'] = 1.0;
-    dict['H'] = 0.5;
-    dict['Q'] = 0.25;
-    dict['E'] = 0.125;
-    dict['S'] = 0.0625;
-    dict['T'] = 0.03125;
-    dict['X'] = 0.015625;
+    char delimiter = '/';
+    notes['W'] = 1.0;
+    notes['H'] = 0.5;
+    notes['Q'] = 0.25;
+    notes['E'] = 0.125;
+    notes['S'] = 0.0625;
+    notes['T'] = 0.03125;
+    notes['X'] = 0.015625;
     while (getline(cin,line) , line.length()){
         if( line == "*"){
             break;
         }
-        splittedString = split(line, delimeter);
+        splittedString = split(line, delimiter);
         cant = 0;
         for(int i = 0; i < (int)splittedString.size(); i++ ){
             sum = 0;
-            var = splittedString[i];
-            for(int j = 0; j < (int)var.length(); j++){
-                char letter = var[j];
-                if(dict.find(letter) != dict.end()){
-                    sum = sum + dict[letter];
+            measure = splittedString[i];
+            for(int j = 0; j < (int)measure.length(); j++){
+                char letter = measure[j];
+                if(notes.find(letter) != notes.end()){
+                    sum = sum + notes[letter];
                 }
             }
             if (sum == 1.0 ){

@@ -1,3 +1,10 @@
+/* 
+* name: Canteen Queue
+* link: https://www.urionlinejudge.com.br/judge/en/problems/view/1548
+* state: Accepted
+* date: 07/10/2020
+*/
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
