@@ -17,11 +17,9 @@ const int INF = 1 << 30;
 
 struct UFDS {
 	vector<int> p, rank; //también pueden usarse arreglos estáticos
-    int sets;
 	
 	UFDS (int size) {
 		p.clear(); rank.clear();
-        //sets = size;
 		for (int i=0; i < size; i++) {
 			p.push_back(i);
 			rank.push_back(0);
@@ -35,25 +33,6 @@ struct UFDS {
 		return find_set(i) == find_set(j);
 	}
 	bool union_set (int i, int j) {
-        /*int x = find_set(i);
-		int y = find_set(j);
-        if(same_set(x, y)){
-            return false;
-        }
-        if(rank[x] < rank[y]){
-            p[x]=y;
-
-        } else if(rank[x] > rank[y]) {
-				p[y] = x;
-            }
-            else{
-                p[y]=x;
-                rank[x]++;
-            }
-        sets--;
-
-        return true;
-    */
         if (!same_set(i, j)) {
 			int x = find_set(i);
 			int y = find_set(j);
@@ -123,7 +102,6 @@ int main(){
     while(TC--){
         cin >> escuelas >> num_conexiones;
         conexiones.clear();
-        MST.clear();
         //incializo las conexiones. escuelas + conexiones = grafo
         while(num_conexiones--){
             cin >> escuelaA >> escuelaB >> costo;
