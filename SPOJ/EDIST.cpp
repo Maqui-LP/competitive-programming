@@ -1,7 +1,7 @@
 /* 
 * name: EDIST - Edit distance
 * link: https://www.spoj.com/problems/EDIST/
-* state: Accepted
+* status: Accepted
 * date: 19/10/2020
 */
 

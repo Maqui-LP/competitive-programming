@@ -1,7 +1,7 @@
 /* 
 * name: All Roads Leads Where?
 * link: https://vjudge.net/problem/UVA-10009
-* state: Accepted
+* status: Accepted
 * date: 13/11/2020
 */
 

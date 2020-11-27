@@ -1,7 +1,7 @@
 /* 
 * name: Driving Range
 * link: https://vjudge.net/problem/UVA-11857 
-* state: Accepted
+* status: Accepted
 * date: 15/11/2020
 */
 

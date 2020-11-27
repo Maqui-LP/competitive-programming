@@ -1,7 +1,7 @@
 /* 
 * name: ACM Contest And Blackout
 * link: https://vjudge.net/problem/UVA-10600
-* state: Wrong Answer
+* status: Wrong Answer
 * date: 15/11/2020
 */
 

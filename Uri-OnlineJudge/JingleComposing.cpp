@@ -1,7 +1,7 @@
 /*
 * name: Jingle Composing
 * link: https://www.urionlinejudge.com.br/judge/en/problems/view/1430
-* state: Accepted
+* status: Accepted
 * date: 07/10/2020
 */
 

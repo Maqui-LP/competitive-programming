@@ -1,7 +1,7 @@
 /* 
 * name: Canteen Queue
 * link: https://www.urionlinejudge.com.br/judge/en/problems/view/1548
-* state: Accepted
+* status: Accepted
 * date: 07/10/2020
 */
 

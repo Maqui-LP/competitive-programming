@@ -21,7 +21,7 @@ vector<coord> holes;
 bool success;
 int n_holes;
 
-double dist(const coord &a, const coord &b){
+double dist(coord a, coord b){
     return hypot(a.x-b.x, a.y - b.y);
 }
 

@@ -1,7 +1,7 @@
 /* 
 * name: ELIS - Easy Longest Increasing Subsequence
 * link: https://www.spoj.com/problems/ELIS/
-* state: Accepted
+* status: Accepted
 * date: 20/10/2020
 */
 

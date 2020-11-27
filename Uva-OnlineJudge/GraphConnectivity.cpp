@@ -1,7 +1,7 @@
 /* 
 * name: Graph Connectivity
 * link: https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=400
-* state: Accepted
+* status: Accepted
 * date: 2/11/2020
 */
 
